@@ -1,4 +1,3 @@
-
 # 🎭 Face Mask Classification
 
 **Real-time face mask detection using HOG/LBP features and RF/SVM classifiers**
@@ -105,7 +104,38 @@ python camera_integration/demo_model_Withdetec.py
 
 ## 🗂️ Project Structure
 
-[Project tree omitted for brevity...]
+```
+Face_Mask_Classification/
+├── LICENSE
+├── README.md
+├── requirements.txt
+├── camera_integration/
+│   └── demo_model_Withdetec.py
+├── example/
+│   └── load-model.ipynb
+├── images/
+│   ├── demo_camera.gif
+│   ├── hog_8x2.png
+│   └── LBP.png
+├── models/
+│   ├── HOG_RandomForest_6x3.joblib
+│   ├── HOG_RandomForest_8x2.joblib
+│   ├── HOG_SVM_6x3.joblib
+│   ├── HOG_SVM_8x2.joblib
+│   ├── LBP_RandomForest.joblib
+│   └── LBP_SVM.joblib
+├── src/
+│   ├── HOG_RandomForest/
+│   │   ├── train-model-HOG_6x3.ipynb
+│   │   └── train-model-HOG_8x2.ipynb
+│   ├── HOG_SVM/
+│   │   ├── train-model-HOG_6x3.ipynb
+│   │   └── train-model-HOG_8x2.ipynb
+│   ├── LBP_RandomForest/
+│   │   └── train-model.ipynb
+│   └── LBP_SVM/
+│       └── train-model.ipynb
+```
 
 ---
 
