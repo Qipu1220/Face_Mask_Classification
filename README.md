@@ -147,8 +147,13 @@ We use the [Face Mask 12K Images Dataset](https://www.kaggle.com/datasets/ashish
 
 ## 📊 Feature Illustration
 
-- HOG Features: `images/hog_8x2.png`
-- LBP Features: `images/LBP.png`
+- HOG Features:
+
+![HOG Features](images/hog_8x2.png)
+
+- LBP Features:
+
+![LBP Features](images/LBP.png)
 
 ---
 
