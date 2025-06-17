@@ -124,17 +124,17 @@ Face_Mask_Classification/
 │   ├── HOG_SVM_8x2.joblib
 │   ├── LBP_RandomForest.joblib
 │   └── LBP_SVM.joblib
-├── src/
-│   ├── HOG_RandomForest/
-│   │   ├── train-model-HOG_6x3.ipynb
-│   │   └── train-model-HOG_8x2.ipynb
-│   ├── HOG_SVM/
-│   │   ├── train-model-HOG_6x3.ipynb
-│   │   └── train-model-HOG_8x2.ipynb
-│   ├── LBP_RandomForest/
-│   │   └── train-model.ipynb
-│   └── LBP_SVM/
-│       └── train-model.ipynb
+└── src/
+    ├── HOG_RandomForest/
+    │   ├── train-model-HOG_6x3.ipynb
+    │   └── train-model-HOG_8x2.ipynb
+    ├── HOG_SVM/
+    │   ├── train-model-HOG_6x3.ipynb
+    │   └── train-model-HOG_8x2.ipynb
+    ├── LBP_RandomForest/
+    │   └── train-model.ipynb
+    └── LBP_SVM/
+        └── train-model.ipynb
 ```
 
 ---
