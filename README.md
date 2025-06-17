@@ -18,11 +18,12 @@
 - [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
+- [Acknowledgements](#acknowledgements)
 
 ---
 
 ## Overview
-This repository, developed for the CS231 course at UIT, aims to detect whether a person is wearing a face mask in real-time. It combines:
+This repository, developed for the CS231 course at VNUHCM - University of Information Technology (UIT), aims to detect whether a person is wearing a face mask in real-time. It combines:
 - Two feature extraction techniques: HOG & LBP
 - Two machine learning models: Random Forest & SVM
 - A YOLOv8-based face detector for real-time face localization
@@ -88,20 +89,43 @@ python camera_integration/demo_model_Withdetec.py
 ---
 
 ## Project Structure
+```
 .
 ├── camera_integration/         # Real-time demo with camera
 │   └── demo_model_Withdetec.py
 ├── example/                    # Example notebook
 │   └── load-model.ipynb
 ├── images/                     # Illustrations of HOG & LBP
+│   ├── demo_camera.gif
+│   ├── hog_8x2.png
+│   └── LBP.png
 ├── models/                     # Pre-trained models
-├── src/                        # Code for training/testing:
+│   ├── HOG_RandomForest_6x3.joblib
+│   ├── HOG_RandomForest_8x2.joblib
+│   ├── HOG_SVM_6x3.joblib
+│   ├── HOG_SVM_8x2.joblib
+│   ├── LBP_RandomForest.joblib
+│   └── LBP_SVM.joblib
+├── src/                        # Code for training/testing
 │   ├── HOG_RandomForest/
+│   │   ├── train-model-HOG_6x3.ipynb
+│   │   └── train-model-HOG_8x2.ipynb
 │   ├── HOG_SVM/
+│   │   ├── train-model-HOG_6x3.ipynb
+│   │   └── train-model-HOG_8x2.ipynb
 │   ├── LBP_RandomForest/
+│   │   └── train-model.ipynb
 │   └── LBP_SVM/
+│       └── train-model.ipynb
 ├── LICENSE
+├── README.md
 └── requirements.txt
+```
+
+---
+
+## Dataset
+The models in this repository were trained on the [Face Mask 12K Images Dataset](https://www.kaggle.com/datasets/ashishjangra27/face-mask-12k-images-dataset). This dataset contains labeled images of people with and without face masks, making it ideal for training and evaluating face mask detection models.
 
 ---
 
@@ -127,9 +151,7 @@ python camera_integration/demo_model_Withdetec.py
 ## Contributing
 We welcome all contributions! Please:
 1. Fork the repository
-2. Create a new branch (`feature/xxx` or `fix/xxx`)
-3. Write code/tests, ensuring proper style
-4. Create a Pull Request with a detailed description
+2. Write code/tests, ensuring proper style
 
 ---
 
